@@ -1,0 +1,55 @@
+@import '../../styles/variables.scss';
+.mode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px;
+
+    .switch {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+
+            &:checked {
+                + ::before {
+                    content: url('../../images/moon.svg');
+                    left: $base * 3px;
+                }
+
+                + span {
+                    background-color: $color-dark;
+                }
+            }
+        }
+
+        span { 
+            display: inline-block;
+            width: $base * 7px;
+            height: 24px;
+            background-color: white;
+            border: solid 1px #C4C4C4;
+            border-radius: 100px;
+            position: relative;
+            transition: 1s;
+
+            &::before {
+                content: url('../../images/sun.svg');
+                transition: 1s;
+                width: $base * 5px;
+                height: $base * 5px;
+                position: absolute;
+                left: $base * -1px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+    }
+
+}

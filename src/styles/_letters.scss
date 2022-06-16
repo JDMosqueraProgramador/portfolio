@@ -1,0 +1,54 @@
+@import './extends';
+
+.size-one {
+    @extend %size-one;
+}
+
+.size-two {
+    @extend %size-two;
+}
+
+.size-three {
+    @extend %size-three;
+}
+
+.size-four {
+    @extend %size-four;
+}
+
+.size-five {
+    @extend %size-five;
+}
+
+.size-six {
+    @extend %size-six;
+}
+
+//? BOLD FONT SIZES HERE
+
+.size-bold-one {
+    @extend %size-bold-one;
+}
+
+.size-bold-two {
+    @extend %size-bold-two;
+}
+
+.size-bold-three {
+    @extend %size-bold-three;
+}
+
+.size-bold-four {
+    @extend %size-bold-four;
+}
+
+.size-bold-five {
+    @extend %size-bold-five;
+}
+
+.size-bold-six {
+    @extend %size-bold-six;
+}
+
+
+

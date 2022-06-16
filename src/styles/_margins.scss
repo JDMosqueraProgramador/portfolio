@@ -1,0 +1,21 @@
+@for $i from 1 through 10 {
+    .margin-left-#{$base * $i} {
+        margin-left: ($base * $i) * 1px !important;
+    }
+
+    .margin-right-#{$base * $i} {
+        margin-right: ($base * $i) * 1px !important;
+    }
+
+    .margin-top-#{$base * $i} {
+        margin-top: ($base * $i) * 1px !important;
+    }
+
+    .margin-bottom-#{$base * $i} {
+        margin-bottom: ($base * $i) * 1px !important;
+    }
+
+    .margin-#{$base * $i} {
+        margin: ($base * $i) * 1px !important;
+    }
+}

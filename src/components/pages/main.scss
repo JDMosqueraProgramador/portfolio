@@ -1,0 +1,137 @@
+@import '../../styles/variables.scss';
+@import '../../styles/extends';
+@import '../../styles/mixins';
+
+main {
+    min-height: 100vh;
+    height: max-content;
+    position: relative;
+
+    .image {
+        display: flex;
+        align-items: center;
+
+        padding: {
+            left: 0 !important;
+            top: $base * 6px;
+            bottom: $base * 6px;
+        }
+
+        .me-picture {
+            width: 90%;
+            height: auto;
+        }
+
+        height: 100%;
+    }
+
+    .information {
+        height: 100%;
+        position: relative;
+
+        padding: {
+            right: $base * 16px;
+            left: $base * 2px;
+            top: 60px;
+            bottom: 60px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include m-xl {
+            
+            h1 {
+                font-weight: 500;
+                font-size: 1.414em;
+            }
+
+            h3 {
+                font-weight: 300;
+                font-size: 1em;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 1em;
+            }
+        }
+
+        h1 {
+            @extend %size-bold-four;
+        }
+
+        h3 {
+            @extend %size-three;
+        }
+
+        p {
+            @extend %size-three;
+            text-align: justify;
+        }
+
+        .programmer-draft {
+            position: absolute;
+            left: 0;
+            bottom: $base * 9px;
+            z-index: -1;
+            width: 20%;
+            height: auto;
+        }
+    }
+
+    .decoration {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 12%;
+        height: auto;
+    }
+
+    @include m-mobile {
+        padding: 80px 0;
+        align-items: center;
+
+        .image {
+
+            padding: 0;
+
+            .me-picture {
+                width: 100%;
+                height: $base * 38px;
+                object-fit: cover;
+                object-position: 0% 0%;
+                transform: translateX(-12%);
+            }
+
+        }
+
+        .information {
+
+            padding: {
+                top: 0;
+                bottom: 16px;
+                left: 24px;
+                right: 24px;
+            }
+
+            height: fit-content;
+
+            button {
+                margin: auto;
+            }
+
+        }
+
+        .decoration {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: auto;
+        }
+    }
+
+}

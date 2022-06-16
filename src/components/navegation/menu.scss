@@ -1,0 +1,77 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins';
+
+header {
+    z-index: 2;
+    transition: 1s;
+
+    &.menu {
+
+        &.light {
+            background-color: white;
+        }
+
+        &.dark {
+            background-color: $color-dark;
+        }
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px $base * 10px;
+
+        border: {
+            top: solid 1px $color-border;
+            bottom: solid 1px $color-border;
+        }
+
+        text-transform: uppercase;
+        color: $color-primary;
+
+        nav {
+            ul {
+                list-style-type: none;
+                justify-content: space-between;
+            }
+
+            .name-header {
+                .myself {
+                    width: $base * 4px;
+                    height: $base * 4px;
+                    object-fit: cover;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+
+    @include m-mobile {
+        &.menu {
+            overflow-x: scroll;
+            padding: 16px;
+
+            nav {
+                width: max-content;
+
+                ul {
+
+                    li {
+                        padding: 8px 16px;
+                    }
+
+                    .contact-btn {
+                        display: none;
+                    }
+                }
+
+                .name-header {
+                    display: none !important;
+
+                    .myself {}
+                }
+            }
+        }
+    }
+
+}
