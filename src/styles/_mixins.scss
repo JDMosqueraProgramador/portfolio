@@ -1,3 +1,5 @@
+@import 'extends';
+
 @mixin m-mobile {
     @media only screen and (max-width: 768px) {
         @content;
@@ -26,6 +28,44 @@
     @media only screen and (max-width: 960px) {
         @content;
     }
+}
+
+@mixin size-two {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+@mixin size-bold-two {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+
+@mixin font-xl-three-mobile-two {
+
+    font-weight: 300;
+    font-size: 1.414em;
+
+    @include m-mobile {
+        @include size-two();
+    }
+
+}
+
+@mixin font-bold-xl-three-mobile-two {
+
+    font-weight: 500;
+    font-size: 1.414em;
+
+    @include m-mobile {
+        @include size-bold-two();
+    }
+
+}
+
+@mixin white-weight {
+    font-weight: 200;
+    color: white;
 }
 
 /* 

@@ -70,6 +70,9 @@ main {
         p {
             @extend %size-three;
             text-align: justify;
+            @include m-mobile {
+                padding: 0 8px;
+            }
         }
 
         .programmer-draft {

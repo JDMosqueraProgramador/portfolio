@@ -1,4 +1,5 @@
 @import './extends';
+@import './mixins';
 
 .size-one {
     @extend %size-one;
@@ -48,6 +49,14 @@
 
 .size-bold-six {
     @extend %size-bold-six;
+}
+
+.size-xl-three-md-two {
+    @include font-xl-three-mobile-two;
+}
+
+.size-bold-xl-three-md-two {
+    @include font-bold-xl-three-mobile-two;
 }
 
 

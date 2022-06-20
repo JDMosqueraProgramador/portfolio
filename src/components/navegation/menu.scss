@@ -2,10 +2,10 @@
 @import '../../styles/mixins';
 
 header {
-    z-index: 2;
-    transition: 1s;
-
     &.menu {
+
+        z-index: 2;
+        transition: 1s;
 
         &.light {
             background-color: white;
@@ -15,7 +15,17 @@ header {
             background-color: $color-dark;
         }
 
-        position: fixed;
+        &.menu-attach {
+            position: fixed !important;
+            top: 0;
+            bottom: initial !important;
+        }
+
+        &.fixed-bottom {
+            position: fixed !important;
+        }
+
+        position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -35,7 +45,27 @@ header {
                 justify-content: space-between;
             }
 
+            button {
+                &.invisible {
+                    opacity: 0;
+                }
+
+                &.visible {
+                    opacity: 1;
+                }
+            }
+
             .name-header {
+                transition: 1s;
+
+                &.invisible {
+                    opacity: 0;
+                }
+
+                &.visible {
+                    opacity: 1;
+                }
+
                 .myself {
                     width: $base * 4px;
                     height: $base * 4px;

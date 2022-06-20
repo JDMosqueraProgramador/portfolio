@@ -5,10 +5,12 @@ import { ThemeContext } from './context/themes.context';
 import { Themes } from './helpers/themes.enum';
 import { changeTheme, getTheme, saveTheme } from './helpers/save-theme.helper';
 import Menu from './components/navegation/Menu.component';
+import Experience from './components/pages/Experience.component';
+import Areas from './components/pages/Areas.component';
 
 const App: React.FC<{}> = () => {
 
-    const [menu, setMenu] = useState<boolean>(false);
+    const [main, setMain] = useState<boolean>(false);
     const [theme, setTheme] = useState<Themes>(getTheme());
     const toggleTheme = () => {
         setTheme((theme === Themes.dark) ? Themes.light : Themes.dark);
@@ -17,7 +19,7 @@ const App: React.FC<{}> = () => {
     useEffect(() => {
         saveTheme(theme);
         changeTheme(theme);
-    }, [theme])
+    }, [theme]);
 
     return (
         <ThemeContext.Provider value={{
@@ -25,8 +27,10 @@ const App: React.FC<{}> = () => {
             toggleTheme: toggleTheme
         }}>
 
-            <Main />
-            <Menu theme={theme} extra={menu} />
+            <Main setMain={setMain} />
+            <Menu theme={theme} main={main} />
+            <Experience />
+            <Areas />
         </ThemeContext.Provider>
     );
 }
