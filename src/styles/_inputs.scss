@@ -1,0 +1,19 @@
+@import './variables';
+@import './extends';
+
+.p-input {
+    background-color: transparent;
+    border: solid 1px #5351C0;
+    border-radius: $base * 1px;
+    padding: $base * 1px;
+    width: 100%;
+    outline: none;
+    @extend %size-two; 
+    &::placeholder {
+        color: #B0B0B0;
+    }
+
+    &.dark {
+        color: white;
+    }
+}

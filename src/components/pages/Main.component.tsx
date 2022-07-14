@@ -25,7 +25,7 @@ const Main: React.FC<{ setMain: any }> = ({ setMain }) => {
     }, [setMain]);
 
     return (
-        <main ref={mainRef} className="container-fluid d-flex">
+        <main ref={mainRef} className="container-fluid d-flex" id="about-me" >
             <div className="row">
                 <MainMode />
                 <MainImage />

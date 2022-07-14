@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.projects {
+    margin-top: 56px;
+    padding: 0 $base * 5px;
+    position: relative;
+
+    .projects-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        img {
+            width: 100%;
+        }
+    }
+}

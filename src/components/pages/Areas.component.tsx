@@ -9,7 +9,7 @@ const Areas: React.FC<{}> = () => {
 
         <ThemeContext.Consumer>
             {({theme}) => (
-                <section className='areas-technologies container-xl'>
+                <section className='areas-technologies container-xl' id="areas">
                     <h2 className='size-bold-xl-three-md-two text-center margin-bottom-16'>AREAS & TECHNOLOGIES</h2>
                     <p className='size-xl-three-md-two text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam enim repellendus eligendi eum tenetur. Officiis!</p>
                     <div className={"areas " + theme}>

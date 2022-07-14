@@ -1,0 +1,61 @@
+@import '../../styles/variables';
+@import '../../styles/extends';
+
+.card-project {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    overflow: hidden;
+    margin: {
+        bottom: $base * 3px;
+        left: $base * 3px;
+        right: $base * 3px;
+    };
+
+
+    &:hover {
+        .card-project-tech {
+            left: 0%;
+        }
+    }
+    
+    .card-project-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+
+    }
+
+    .card-project-tech {
+        position: absolute;
+        transition: 1s;
+        top: 0;
+        left: -100%;
+        height: 250px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: $base * 2px;
+
+        h4 {
+            color: white;
+        }
+    }
+
+    .card-project-name {
+        text-align: center;
+        @extend %size-bold-two;
+        margin: {
+            top: $base * 2px;
+            bottom: $base * 1px;
+        }
+    }
+    .card-project-description {
+        text-align: center;
+        @extend %size-two;
+    }
+}

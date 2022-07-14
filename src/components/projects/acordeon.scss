@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+@import '../../styles/extends';
+
+
+.acordeon {
+    width: 100%;
+    overflow: hidden;
+
+    &.dark {
+        .acordeon-head {
+            border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+        }
+    }
+
+    &.light {
+        .acordeon-head {
+            border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .acordeon-head {
+        width: 100%;
+        @extend %size-two;
+        padding: $base * 1px;
+        cursor: pointer;
+    }
+
+    .acordeon-content {
+        transition: 1s;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: scaleY(0);
+        transform-origin: top;
+
+        &.zero-height {
+            height: 0px;
+        }
+    }
+
+    &.acordeon-active {
+        .acordeon-content {
+            transform: scaleY(1);
+            padding: $base * 1px 0;
+        }
+    }
+
+}

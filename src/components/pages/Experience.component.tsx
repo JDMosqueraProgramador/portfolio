@@ -49,7 +49,7 @@ const Experience: React.FC<{}> = () => {
 
         <ThemeContext.Consumer>
             {({ theme }) => (
-                <section className={'experience ' + theme}>
+                <section className={'experience ' + theme} id="experience">
                     <h2 className='experience-title'>ACADEMIC AND WORK</h2>
                     <p className='experience-description container-xxl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae aperiam voluptates quos assumenda est doloribus voluptatem eum hic. Labore.</p>
 

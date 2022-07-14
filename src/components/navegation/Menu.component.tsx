@@ -28,10 +28,10 @@ const Menu: FC<{ theme: Themes, main: boolean }> = ({ theme, main }) => {
         <header className={'menu container-fluid ' + theme + ((extra) ? " menu-attach" : "") + style}>
             <nav className='row align-items-center'>
                 <ul className='col-xl-8 d-flex align-items-center size-bold-two'>
-                    <li>About me</li>
-                    <li>Academic & work</li>
-                    <li>Projects</li>
-                    <li>Development areas & languages</li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href='#experience'>Academic & work</a></li>
+                    <li><a href='#projects'>Projects</a> </li>
+                    <li><a href='#areas'>Development areas & languages</a></li>
                     <button className={"btn-primary  d-none d-xl-block contact-btn transition-1s " + ((extra) ? "visible" : "invisible")}> Contact me </button>
                 </ul>
 

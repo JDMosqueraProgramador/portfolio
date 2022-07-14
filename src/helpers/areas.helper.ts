@@ -1,10 +1,10 @@
-import { ICardArea } from "../interfaces/card-area.interface";
+import { IArea } from "../interfaces/card-area.interface";
 import webImg from "../images/programming.svg";
 import databaseImg from "../images/database.svg";
 import designImg from "../images/design.svg";
 import learnImg from "../images/learning.svg";
 
-const areas: Array<ICardArea> = [
+const areas: Array<IArea> = [
     {
         img: webImg,
         title: "Web Development",

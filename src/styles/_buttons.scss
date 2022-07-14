@@ -1,10 +1,85 @@
 .btn-primary {
     display: block;
     border-radius: 100px;
-    background-color: $color-primary;
     padding: $base * 2px;
     color: white;
     font-weight: 500;
     font-size: 16px;
-    border: solid 1px $color-primary;
+    border: none;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    transition: 2s;
+    cursor: pointer;
+    // border: solid 1px transparent;
+
+    &::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: 1s;
+        background: $color-primary;
+        border-radius: 100px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 0;
+        height: 96%;
+        top: 0;
+        right: 0;
+        transition: 1s;
+        border: solid 1px $color-primary;
+        background-color: transparent;
+        border-radius: 100px;
+    }
+
+    &:hover {
+        color: $color-primary;
+
+        &::before {
+            left: -100%;
+        }
+
+        &::after {
+            width: 98%;
+        }
+    }
+}
+
+.tag {
+    &.tag-green {
+        border: solid 1px #0F8923;
+        color: #0F8923;
+
+        &:hover {
+            box-shadow: 0px 0px 4px 1px #0F8923;
+        }
+    }
+
+    &.tag-purple {
+        border: solid 1px $base;
+        color: $base
+    }
+
+    margin: $base * 1px - 4;
+    display: inline-block;
+    border-radius: $base * 2px - 4;
+    padding: $base * 2px - 6 $base * 2px;
+    background: transparent;
+    transition: 0.5s;
+    width: max-content;
+    height: min-content;
+    cursor: pointer;
+
+    &.active {
+        background: #0F8923;
+        color: white;
+    }
 }

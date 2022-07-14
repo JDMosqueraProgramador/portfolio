@@ -1,3 +1,3 @@
-export interface ICardArea {
-    img: string, title: string, technologies: Array<string>
+export interface IArea {
+    img?: string, title: string, technologies: Array<string>
 }

@@ -7,6 +7,7 @@ import { changeTheme, getTheme, saveTheme } from './helpers/save-theme.helper';
 import Menu from './components/navegation/Menu.component';
 import Experience from './components/pages/Experience.component';
 import Areas from './components/pages/Areas.component';
+import Projects from './components/pages/Projects.component';
 
 const App: React.FC<{}> = () => {
 
@@ -31,6 +32,7 @@ const App: React.FC<{}> = () => {
             <Menu theme={theme} main={main} />
             <Experience />
             <Areas />
+            <Projects />
         </ThemeContext.Provider>
     );
 }

@@ -1,8 +1,8 @@
 import React from 'react'
-import { ICardArea } from '../../interfaces/card-area.interface';
+import { IArea } from '../../interfaces/card-area.interface';
 import './card-area.scss';
 
-const CardArea: React.FC<ICardArea> = 
+const CardArea: React.FC<IArea> = 
 ({ title, technologies, img }) => {
     return (
         <div className='card-area'>

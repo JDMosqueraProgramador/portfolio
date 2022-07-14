@@ -7,6 +7,11 @@ header {
         z-index: 2;
         transition: 1s;
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         &.light {
             background-color: white;
         }
