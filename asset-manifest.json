@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.673e3a66.css",
+    "main.js": "/portfolio/static/js/main.fce6bd02.js",
+    "static/media/learning.svg": "/portfolio/static/media/learning.6223ee6dd68b44d7725b062ab98b1674.svg",
+    "static/media/database.svg": "/portfolio/static/media/database.7af80f9b9ba2b6e0e254e55cdc27b34f.svg",
+    "static/media/me-dark.png": "/portfolio/static/media/me-dark.c09befbe3d76d7f3251d.png",
+    "static/media/me.png": "/portfolio/static/media/me.6664bba1ae17b5c4606a.png",
+    "static/media/myself.jpeg": "/portfolio/static/media/myself.3ee2123753692b8a391c.jpeg",
+    "static/media/programming.svg": "/portfolio/static/media/programming.644c201d1bae374c2a03c93d43b679a6.svg",
+    "static/media/programmer.svg": "/portfolio/static/media/programmer.83b892513b930ceb464fd4ef8af80e1a.svg",
+    "static/media/design.svg": "/portfolio/static/media/design.36f3e2696bac0f39bc8f4f319cb844a5.svg",
+    "static/media/moon.svg": "/portfolio/static/media/moon.9b39eb852456c1722b93.svg",
+    "static/media/sun.svg": "/portfolio/static/media/sun.822e42f28cecef5525ba.svg",
+    "static/media/arrow-down-white.svg": "/portfolio/static/media/arrow-down-white.63bf88864869091cb78c4404586dd407.svg",
+    "static/media/arrow-down.svg": "/portfolio/static/media/arrow-down.2a32eb2fd592e8fdc144fa47a2fcf1ea.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/decoration.svg": "/portfolio/static/media/decoration.00c940498f82913325c42617958b2945.svg",
+    "main.673e3a66.css.map": "/portfolio/static/css/main.673e3a66.css.map",
+    "main.fce6bd02.js.map": "/portfolio/static/js/main.fce6bd02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.673e3a66.css",
+    "static/js/main.fce6bd02.js"
+  ]
+}
