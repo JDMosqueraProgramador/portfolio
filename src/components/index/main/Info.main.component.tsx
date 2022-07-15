@@ -1,5 +1,5 @@
 import React from 'react'
-import programmerImg from "../../images/programmer.svg"; 
+import programmerImg from "../../../images/programmer.svg"; 
 
 const MainInfo = () => {
     return (

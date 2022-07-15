@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import MainImage from "../main/Image.main.component";
 import MainInfo from "../main/Info.main.component";
 import MainMode from "../main/Mode.main.component";
-import decorationImg from "../../images/decoration.svg";
+import decorationImg from "../../../images/decoration.svg";
 import "./main.scss";
 
 const Main: React.FC<{ setMain: any }> = ({ setMain }) => {

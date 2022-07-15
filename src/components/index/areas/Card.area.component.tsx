@@ -1,5 +1,5 @@
 import React from 'react'
-import { IArea } from '../../interfaces/card-area.interface';
+import { IArea } from '../../../interfaces/card-area.interface';
 import './card-area.scss';
 
 const CardArea: React.FC<IArea> = 

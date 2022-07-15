@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { arrayToLower } from '../../helpers/arrays.helper';
-import { IProject } from '../../interfaces/project.interface';
+import { arrayToLower } from '../../../helpers/arrays.helper';
+import { IProject } from '../../../interfaces/project.interface';
 import CardProject from '../projects/Card.project.component';
 import FilterProjects from '../projects/Filter.project.component';
 import './projects.scss';

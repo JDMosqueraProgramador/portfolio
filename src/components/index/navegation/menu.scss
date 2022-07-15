@@ -1,5 +1,5 @@
-@import '../../styles/variables.scss';
-@import '../../styles/mixins';
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins';
 
 header {
     &.menu {
@@ -26,12 +26,16 @@ header {
             bottom: initial !important;
         }
 
-        &.fixed-bottom {
-            position: fixed !important;
+        &.stiky-top {
+            position: sticky;
+            top: 0;
         }
 
-        position: absolute;
-        bottom: 0;
+        &.absolute-to-fixed {
+            position: absolute;
+            bottom: 0;
+        }
+
         left: 0;
         width: 100%;
         padding: 12px $base * 10px;

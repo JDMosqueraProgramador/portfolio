@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import { ThemeContext } from '../../context/themes.context';
-import { Themes } from '../../helpers/themes.enum';
+import { ThemeContext } from '../../../context/themes.context';
+import { Themes } from '../../../helpers/themes.enum';
 import './mode.scss';
 
 const MainMode: React.FC<{}> = () => {

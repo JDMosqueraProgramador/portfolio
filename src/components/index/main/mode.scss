@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import '../../../styles/variables.scss';
 .mode {
     position: absolute;
     top: 0;
@@ -18,7 +18,7 @@
 
             &:checked {
                 + ::before {
-                    content: url('../../images/moon.svg');
+                    content: url('../../../images/moon.svg');
                     left: $base * 3px;
                 }
 
@@ -39,7 +39,7 @@
             transition: 1s;
 
             &::before {
-                content: url('../../images/sun.svg');
+                content: url('../../../images/sun.svg');
                 transition: 1s;
                 width: $base * 5px;
                 height: $base * 5px;

@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { IArea } from '../../interfaces/card-area.interface';
-import imgArrowDown from '../../images/arrow-down.svg';
-import imgArrowDownWhite from '../../images/arrow-down-white.svg';
+import { IArea } from '../../../interfaces/card-area.interface';
+import imgArrowDown from '../../../images/arrow-down.svg';
+import imgArrowDownWhite from '../../../images/arrow-down-white.svg';
 
 import './acordeon.scss';
 import Tag from './Tag.project.component';
-import { ThemeContext } from '../../context/themes.context';
-import { Themes } from '../../helpers/themes.enum';
+import { ThemeContext } from '../../../context/themes.context';
+import { Themes } from '../../../helpers/themes.enum';
 
 interface IAcordeon extends IArea {
     setSelected: Function

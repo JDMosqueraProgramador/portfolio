@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import './menu.scss';
-import myselfImg from '../../images/myself.jpeg';
-import { Themes } from '../../helpers/themes.enum';
+import myselfImg from '../../../images/myself.jpeg';
+import { Themes } from '../../../helpers/themes.enum';
 
 const Menu: FC<{ theme: Themes, main: boolean }> = ({ theme, main }) => {
 
@@ -20,12 +20,12 @@ const Menu: FC<{ theme: Themes, main: boolean }> = ({ theme, main }) => {
     }, []);
 
     useEffect(() => {
-        setStyle((main) ? " fixed-bottom": "");
+        setStyle((main) ? " stiky-top": " absolute-to-fixed");
     }, [main])
 
 
     return (
-        <header className={'menu container-fluid ' + theme + ((extra) ? " menu-attach" : "") + style}>
+        <header className={'menu container-fluid ' + theme + ((extra && !main) ? " menu-attach" : "") + style}>
             <nav className='row align-items-center'>
                 <ul className='col-xl-8 d-flex align-items-center size-bold-two'>
                     <li><a href="#about-me">About me</a></li>

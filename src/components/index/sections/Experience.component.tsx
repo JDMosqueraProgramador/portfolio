@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ThemeContext } from '../../context/themes.context';
-import { ICardExperience } from '../../interfaces/card-experience.interface';
+import { ThemeContext } from '../../../context/themes.context';
+import { ICardExperience } from '../../../interfaces/card-experience.interface';
 import CardExperience from '../experience/Card.experience.component';
 import './experience.scss';
 

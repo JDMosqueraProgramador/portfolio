@@ -1,0 +1,35 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.projects {
+    margin-top: 56px;
+    padding: 0 $base * 5px;
+    position: relative;
+
+    .projects-filter {
+        position: sticky;
+        top: $base * 12px;
+        margin-bottom: $base * 4px;
+    }
+
+    .projects-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        img {
+            width: 100%;
+        }
+
+        @include m-mobile {
+            grid-template-columns: repeat(1, 1fr);
+            .card-project {
+                width: 100%;
+                margin: {
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+
+    }
+}

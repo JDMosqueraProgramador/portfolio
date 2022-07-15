@@ -1,7 +1,7 @@
 import React from 'react';
-import { ThemeContext } from '../../context/themes.context';
-import { Themes } from '../../helpers/themes.enum';
-import { ICardExperience } from '../../interfaces/card-experience.interface';
+import { ThemeContext } from '../../../context/themes.context';
+import { Themes } from '../../../helpers/themes.enum';
+import { ICardExperience } from '../../../interfaces/card-experience.interface';
 import './card-experience.scss';
 
 const CardExperience: React.FC<ICardExperience> =

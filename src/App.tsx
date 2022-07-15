@@ -1,39 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import Main from './components/pages/Main.component';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
-import { ThemeContext } from './context/themes.context';
-import { Themes } from './helpers/themes.enum';
-import { changeTheme, getTheme, saveTheme } from './helpers/save-theme.helper';
-import Menu from './components/navegation/Menu.component';
-import Experience from './components/pages/Experience.component';
-import Areas from './components/pages/Areas.component';
-import Projects from './components/pages/Projects.component';
+import Index from './pages/Index.page';
 
 const App: React.FC<{}> = () => {
 
-    const [main, setMain] = useState<boolean>(false);
-    const [theme, setTheme] = useState<Themes>(getTheme());
-    const toggleTheme = () => {
-        setTheme((theme === Themes.dark) ? Themes.light : Themes.dark);
-    }
-
-    useEffect(() => {
-        saveTheme(theme);
-        changeTheme(theme);
-    }, [theme]);
-
     return (
-        <ThemeContext.Provider value={{
-            theme: theme,
-            toggleTheme: toggleTheme
-        }}>
-
-            <Main setMain={setMain} />
-            <Menu theme={theme} main={main} />
-            <Experience />
-            <Areas />
-            <Projects />
-        </ThemeContext.Provider>
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<Index />}>
+                    <Route path=":id" />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 

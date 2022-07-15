@@ -1,6 +1,6 @@
 import React from 'react'
-import { ThemeContext } from '../../context/themes.context';
-import areas from '../../helpers/areas.helper';
+import { ThemeContext } from '../../../context/themes.context';
+import areas from '../../../helpers/areas.helper';
 import CardArea from '../areas/Card.area.component';
 import "./areas.scss";
 
