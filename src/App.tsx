@@ -1,18 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { ThemeContext } from './context/themes.context';
+import { Themes } from './helpers/themes.enum';
+import { changeTheme, getTheme, saveTheme } from './helpers/save-theme.helper';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Index from './pages/Index.page';
+import Project from './pages/Project.page';
 
 const App: React.FC<{}> = () => {
 
+    const [theme, setTheme] = useState<Themes>(getTheme());
+    const toggleTheme = () => {
+        setTheme((theme === Themes.dark) ? Themes.light : Themes.dark);
+    }
+
+    useEffect(() => {
+        saveTheme(theme);
+        changeTheme(theme);
+    }, [theme]);
+
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Index />}>
-                    <Route path=":id" />
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        <ThemeContext.Provider value={{
+            theme: theme,
+            toggleTheme: toggleTheme
+        }}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Index />}>
+                    </Route>
+                    <Route path=":id" element={<Project />} />
+
+                </Routes>
+            </BrowserRouter>
+        </ThemeContext.Provider>
     );
 }
 

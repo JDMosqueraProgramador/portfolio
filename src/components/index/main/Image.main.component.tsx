@@ -4,7 +4,7 @@ import meImg from '../../../images/me.png';
 import meDarkImg from '../../../images/me-dark.png'
 import { Themes } from '../../../helpers/themes.enum';
 
-const MainImage = () => {
+const MainImage: React.FC<{}> = () => {
     return (
         <ThemeContext.Consumer>
             {({ theme }): ReactNode => (

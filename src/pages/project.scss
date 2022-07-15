@@ -1,0 +1,16 @@
+@import '../styles/variables';
+
+.project-info {
+    padding: 0 $base * 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .btn-primary {
+        margin: {
+            left: $base * 0.5px;
+            right: $base * 0.5px;
+        }
+    }
+}

@@ -11,6 +11,8 @@
     position: relative;
     transition: 2s;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
     // border: solid 1px transparent;
 
     &::before {
@@ -61,11 +63,25 @@
         &:hover {
             box-shadow: 0px 0px 4px 1px #0F8923;
         }
+
+        &.active {
+            background: #0F8923;
+            color: white;
+        }
     }
 
     &.tag-purple {
-        border: solid 1px $base;
-        color: $base
+        border: solid 1px $color-primary;
+        color: $color-primary;
+
+        &:hover {
+            box-shadow: 0px 0px 4px 1px $color-primary;
+        }
+
+        &.active {
+            background: $color-primary;
+            color: white;
+        }
     }
 
     margin: $base * 1px - 4;
@@ -78,8 +94,5 @@
     height: min-content;
     cursor: pointer;
 
-    &.active {
-        background: #0F8923;
-        color: white;
-    }
+
 }

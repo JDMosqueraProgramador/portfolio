@@ -4,9 +4,10 @@ import imgArrowDown from '../../../images/arrow-down.svg';
 import imgArrowDownWhite from '../../../images/arrow-down-white.svg';
 
 import './acordeon.scss';
-import Tag from './Tag.project.component';
+import Tag from '../../shared/Tag.project.component';
 import { ThemeContext } from '../../../context/themes.context';
 import { Themes } from '../../../helpers/themes.enum';
+import { ETag } from '../../../interfaces/tag.enum';
 
 interface IAcordeon extends IArea {
     setSelected: Function
@@ -42,7 +43,7 @@ const AcordeonProject: React.FC<IAcordeon> = ({ title, technologies, setSelected
                     } >
                         {
                             technologies.map((technology, i) => (
-                                <Tag key={i} content={technology} setSelected={setSelected} />
+                                <Tag type={ETag.green} key={i} content={technology} setSelected={setSelected} />
                             ))
                         }
                     </div>
