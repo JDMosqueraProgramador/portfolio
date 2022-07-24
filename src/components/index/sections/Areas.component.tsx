@@ -11,7 +11,7 @@ const Areas: React.FC<{}> = () => {
             {({theme}) => (
                 <section className='areas-technologies container-xl' id="areas">
                     <h2 className='size-bold-xl-three-md-two text-center margin-bottom-16'>AREAS & TECHNOLOGIES</h2>
-                    <p className='size-xl-three-md-two text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam enim repellendus eligendi eum tenetur. Officiis!</p>
+                    <p className='size-xl-three-md-two text-center'>They are the areas and technologies I know and work with these.</p>
                     <div className={"areas " + theme}>
                         {
                             areas.map((area, i) => (
