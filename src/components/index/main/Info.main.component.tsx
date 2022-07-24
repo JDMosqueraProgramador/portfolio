@@ -9,7 +9,7 @@ const MainInfo = () => {
 
             <p className="size-three text-justify margin-bottom-16">Soy un estudiante apasionado por practicar deporte y por las computadoras. Actualmente me encuentro realizando mis estudios en ingeniería informática, cuento con muy buen manejo en el desarrollo web front-end y back-end, siempre estoy en busca de nuevos conocimientos que me permitan mejorar cada día más.</p>
 
-            <button className="btn-primary ms-auto px-5">Contact me</button>
+            <a href='#contact' className="btn-primary ms-auto px-5 btn-main"> Contact me</a>
             <img src={programmerImg} className="programmer-draft d-md-block d-none" alt="" />
 
         </div>

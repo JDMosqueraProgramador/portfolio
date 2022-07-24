@@ -1,0 +1,54 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.contact {
+
+    position: relative;
+    margin-top: $base * 5px;
+    margin-bottom: $base * 5px;
+
+
+    .contact-text {
+        padding: 0 $base * 2px - 4;
+    }
+
+    .image-contact {
+        position: absolute;
+        bottom: 0;
+        width: 20%;
+        height: auto;
+
+        &.left {
+            left: $base * 5px;
+        }
+
+        &.right {
+            right: $base * 5px;
+        }
+
+        @include m-mobile {
+            display: none;
+        }
+    }
+
+    form {
+        width: 40%;
+        max-width: 800px;
+        padding: 0 $base * 1px;
+        margin: $base * 2px auto;
+
+        @include m-xl {
+            width: 50%;
+        }
+
+        @include m-mobile {
+            width: 100%;
+        }
+
+        button {
+            width: 90%;
+            margin: auto;
+        }
+    }
+
+}

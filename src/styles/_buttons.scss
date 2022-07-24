@@ -2,7 +2,7 @@
     display: block;
     border-radius: 100px;
     padding: $base * 2px;
-    color: white;
+    color: white !important;
     font-weight: 500;
     font-size: 16px;
     border: none;
@@ -43,7 +43,7 @@
     }
 
     &:hover {
-        color: $color-primary;
+        color: $color-primary !important;
 
         &::before {
             left: -100%;

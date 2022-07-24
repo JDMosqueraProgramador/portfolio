@@ -1,5 +1,5 @@
-@import '../../../styles/variables.scss';
-@import '../../../styles/mixins';
+@import '../../styles/variables.scss';
+@import '../../styles/mixins';
 
 header {
     &.menu {
@@ -81,6 +81,11 @@ header {
                     object-fit: cover;
                     border-radius: 100%;
                 }
+            }
+
+            .alt-btn {
+                text-transform: capitalize !important;
+                width: max-content;
             }
         }
     }

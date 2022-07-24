@@ -16,4 +16,28 @@
     &.dark {
         color: white;
     }
+
+}
+
+.input-box {
+    // width: 100%;
+    margin: $base * 2px;
+    label {
+        width: 100%;
+        margin: $base * 1px 0;
+        display: block;
+        span {
+            color: red;
+        }
+    }
+
+    .input-error {
+        color: red;
+        margin: $base * 1px 0;
+    }
+
+}
+
+textarea {
+    resize: vertical;
 }

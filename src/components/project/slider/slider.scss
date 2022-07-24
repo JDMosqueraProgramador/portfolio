@@ -1,0 +1,86 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.slider {
+    width: 100%;
+
+    .slider-images-container {
+        margin-top: $base * 1px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $base * 1px;
+
+        .slider-image-change {
+            width: 100%;
+            height: 100px;
+
+            object-fit: cover;
+        }
+    }
+
+
+    .slider-picture {
+        position: relative;
+        width: 100%;
+
+        .slider-main-image {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+
+            @include m-mobile {
+                height: 30vh;
+            }
+        }
+
+        &:hover {
+            .slider-control {
+                display: block;
+            }
+        }
+
+        .slider-control {
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            height: 100%;
+            width: min-content;
+            background-color: rgba(0, 0, 0, 0.185);
+            border: none;
+            padding: $base * 2px;
+
+            img {
+                width: $base * 6px;
+                height: $base * 6px;
+                object-fit: cover;
+            }
+
+            &:first-child {
+                top: 0;
+                left: 0;
+            }
+
+            &:last-child {
+                top: 0;
+                right: 0;
+            }
+        }
+
+
+    }
+
+    @include m-mobile {}
+
+
+}
+
+
+@keyframes easy-img {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

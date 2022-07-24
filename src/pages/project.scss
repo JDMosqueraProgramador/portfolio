@@ -1,8 +1,15 @@
 @import '../styles/variables';
 
+.container-project {
+    padding: {
+        left: $base * 6px;
+        right: $base * 6px;
+
+    }
+}
+
 .project-info {
-    padding: 0 $base * 3px;
-    justify-content: center;
+    padding: $base * 1px $base * 3px;
     align-items: center;
     display: flex;
     flex-direction: column;

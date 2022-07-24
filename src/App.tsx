@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Index from './pages/Index.page';
 import Project from './pages/Project.page';
+import Footer from './components/navegation/Footer.component';
 
 const App: React.FC<{}> = () => {
 
@@ -24,7 +25,7 @@ const App: React.FC<{}> = () => {
             theme: theme,
             toggleTheme: toggleTheme
         }}>
-            <BrowserRouter>
+            <BrowserRouter basename='portfolio'>
                 <Routes>
                     <Route path='/' element={<Index />}>
                     </Route>
@@ -32,6 +33,7 @@ const App: React.FC<{}> = () => {
 
                 </Routes>
             </BrowserRouter>
+            <Footer />
         </ThemeContext.Provider>
     );
 }

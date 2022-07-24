@@ -51,7 +51,7 @@ const Experience: React.FC<{}> = () => {
             {({ theme }) => (
                 <section className={'experience ' + theme} id="experience">
                     <h2 className='experience-title'>ACADEMIC AND WORK</h2>
-                    <p className='experience-description container-xxl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae aperiam voluptates quos assumenda est doloribus voluptatem eum hic. Labore.</p>
+                    <p className='experience-description container-xxl'>Here you can know about my studies, recognitions and achievements.</p>
 
                     <div className="d-flex flex-wrap justify-content-center">
                         {

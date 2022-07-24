@@ -1,0 +1,43 @@
+@import '../../styles/variables'; 
+@import '../../styles/mixins'; 
+
+
+footer {
+    background: $color-primary;
+    width: 100%;
+    padding: $base * 2px;
+    color: white;
+    text-align: center;
+    margin-top: $base * 2px;
+
+    .social-media {
+        img {
+            margin: 8px;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        width: max-content;
+        max-width: 100%;
+        text-transform: uppercase;
+
+        @include m-mobile {
+            flex-direction: column;
+        }
+
+        li {
+            list-style-type: none;
+            padding: $base * 2px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
