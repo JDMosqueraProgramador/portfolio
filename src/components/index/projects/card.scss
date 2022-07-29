@@ -36,12 +36,13 @@
         left: -100%;
         height: 250px;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.9);
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
         padding: $base * 2px;
+        overflow-y: auto;
 
         h4 {
             color: white;

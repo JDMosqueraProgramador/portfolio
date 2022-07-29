@@ -37,6 +37,7 @@ const Footer: React.FC<{}> = () => {
                 <li><a href='#projects'>Projects</a> </li>
             </ul>
 
+            <div className='margin-bottom-16'>This site was built with React.</div>
             <span> &copy; Juan David Mosquera Muñoz - {new Date().getFullYear()} </span>
         </footer>
     )
