@@ -4,6 +4,22 @@ import databaseImg from "../images/database.svg";
 import designImg from "../images/design.svg";
 import learnImg from "../images/learning.svg";
 
+export const tags: Array<{ title: string, content: Array<string> }> = [
+    {
+        title: "Web development",
+        content: ["HTML", "CSS", "SASS", "JavaScript", "TypeScript", "Node js", "React", "PHP", "Web development"],
+    },
+
+    {
+        title: "Database Development",
+        content: ["MySQL", "PostgreSQL", "SQL Server", "MongoDB"]
+    },
+    {
+        title: "Complementary",
+        content: ["Figma", "Git"]
+    }  
+]
+
 const areas: Array<IArea> = [
     {
         img: webImg,

@@ -5,7 +5,7 @@ import Tag from '../../shared/Tag.project.component';
 import { Link } from 'react-router-dom';
 
 const CardProject:
-    React.FC<{ img: string, name: string, description: string, technologies: Array<string> }>
+    React.FC<{ id: number, img: string, name: string, description: string, technologies: Array<string> }>
     = ({ img, name, description, technologies }) => {
         return (
             <div className='card-project'>

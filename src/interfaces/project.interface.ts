@@ -1,6 +1,6 @@
 export interface IProject {
-    id?: number,
-    img: string,
+    id: number,
+    img: Array<string>,
     name: string,
     description: string,
     rol?: string,
