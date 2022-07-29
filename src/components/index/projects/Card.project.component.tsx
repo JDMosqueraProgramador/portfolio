@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 
 const CardProject:
     React.FC<{ id: number, img: string, name: string, description: string, technologies: Array<string> }>
-    = ({ img, name, description, technologies }) => {
+    = ({ id, img, name, description, technologies }) => {
         return (
             <div className='card-project'>
-                <Link to="1">
+                <Link to={id.toString()}>
                     <img src={img} alt="" className='card-project-img' />
 
                     <div className='card-project-tech'>

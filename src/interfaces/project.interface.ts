@@ -3,6 +3,7 @@ export interface IProject {
     img: Array<string>,
     name: string,
     description: string,
+    year: number, 
     rol?: string,
     technologies: Array<string>
     links?: Array<ILink>

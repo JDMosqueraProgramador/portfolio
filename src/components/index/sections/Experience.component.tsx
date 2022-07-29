@@ -1,49 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ThemeContext } from '../../../context/themes.context';
-import { ICardExperience } from '../../../interfaces/card-experience.interface';
 import CardExperience from '../experience/Card.experience.component';
+import { experiences } from '../../../helpers/experience.helper';
 import './experience.scss';
 
 const Experience: React.FC<{}> = () => {
-
-    const [experiences] = useState<Array<ICardExperience>>([
-        {
-            urls: { dark: "https://prueba.fedesoft.org/wp-content/uploads/2020/06/logo-fedesoft_2.png", light: "https://fedesoft.org/wp-content/uploads/2020/06/3.-logo-fedesoft-Color.png" },
-            title: "Concurso nacional de programación",
-            description: "Puesto #1 en Antioquia",
-            date: "2019"
-        },
-        {
-            urls: { dark: "https://www.unaula.edu.co/sites/default/files/inline-images/logo.png", light: "https://www.unaula.edu.co/sites/default/files/inline-images/logo.png" },
-            title: "Computer engineering",
-            description: "Universidad Autónoma Latinoamericana",
-            date: "2020 - Now"
-        },
-        {
-            urls: { dark: "https://prueba.fedesoft.org/wp-content/uploads/2020/06/logo-fedesoft_2.png", light: "https://fedesoft.org/wp-content/uploads/2020/06/3.-logo-fedesoft-Color.png" },
-            title: "Concurso nacional de programación",
-            description: "Puesto #1 en Antioquia",
-            date: "2019"
-        },
-        {
-            urls: { dark: "https://www.unaula.edu.co/sites/default/files/inline-images/logo.png", light: "https://www.unaula.edu.co/sites/default/files/inline-images/logo.png" },
-            title: "Computer engineering",
-            description: "Universidad Autónoma Latinoamericana",
-            date: "2020 - Now"
-        },
-        {
-            urls: { dark: "https://prueba.fedesoft.org/wp-content/uploads/2020/06/logo-fedesoft_2.png", light: "https://fedesoft.org/wp-content/uploads/2020/06/3.-logo-fedesoft-Color.png" },
-            title: "Concurso nacional de programación",
-            description: "Puesto #1 en Antioquia",
-            date: "2019"
-        },
-        {
-            urls: { dark: "https://www.unaula.edu.co/sites/default/files/inline-images/logo.png", light: "https://www.unaula.edu.co/sites/default/files/inline-images/logo.png" },
-            title: "Computer engineering",
-            description: "Universidad Autónoma Latinoamericana",
-            date: "2020 - Now"
-        }
-    ])
 
     return (
 
