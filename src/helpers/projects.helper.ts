@@ -17,12 +17,11 @@ export const projects: Array<IProject> = [
         technologies: ["Web development", "HTML", "SASS", "JavaScript", "TypeScript", "Node js", "React", "MongoDB", "Figma", "Git"],
         links: [{ name: "Git (Front-end)", url: "https://gitlab.com/DEVUNAULA/unaulanetwork" }, { name: "Git (Back-end)", url: "https://gitlab.com/DEVUNAULA/unaulanetwork-api" } , { name: "Figma", url: "https://www.figma.com/file/kqemfGHKXS8h6KyA0YG6la/UNAULA-NETWORK?node-id=207%3A5875" }]
     },
-
     {
         id: 2,
         img: ["https://i.ibb.co/D9TGN6t/psc.png", "https://i.ibb.co/Wnzhjn1/PSC-Google-Chrome-2022-07-28-17-44-42-3-Adobe-Express.gif", "https://i.ibb.co/T8PsLG9/Adopci-n-PSC-Google-Chrome-2022-07-28-17-45-22-2-Adobe-Express.gif", "https://i.ibb.co/zRxFq0F/Donar-PSC-Google-Chrome-2022-07-28-17-46-01-2-Adobe-Express.gif", "https://i.ibb.co/n8CK7mX/Fundaci-n-PSC-Google-Chrome-2022-07-28-17-45-39-2-Adobe-Express.gif", "https://i.ibb.co/5s139gd/Iniciar-Sesi-n-PSC-Google-Chrome-2022-07-28-17-48-10-2.gif"],
         name: "Peluditos San Cristóbal",
-        description: "Peluditos San Cristóbal is managment system for Peluditos San Cristóbal foundation  in Medellín, Colombia. That foundation  takes care of rescue animals from the streets, give them a home and find who adopts them. Moreover, through the web system, you can adopt a pet, donate and participate of this foundation.",
+        description: "Peluditos San Cristóbal is managment system for Peluditos San Cristóbal foundation in Medellín, Colombia. That foundation takes care of rescue animals from the streets, give them a home and find who adopts them. Moreover, through the web system, you can adopt a pet, donate and participate of this foundation.",
         rol: "Development Full-Stack",
         year: 2019,
         technologies: ["Web development", "HTML", "CSS", "SASS", "JavaScript", "PHP", "MySQL", "Git"],
@@ -40,7 +39,7 @@ export const projects: Array<IProject> = [
     },
     {
         id: 4,
-        img: ["https://yt3.ggpht.com/ytc/AKedOLSbq7rfRuqxBM9DXf9_W83tpvnIV-DMRHQdFInM=s900-c-k-c0x00ffffff-no-rj"],
+        img: ["http://www.acofi.edu.co/eiei2016/wp-content/uploads/2016/09/Logo-Universidad-de-La-Salle.jpg"],
         name: "La Salle Concurso",
         description: "La Salle Concurso is managment system for La Salle university in Bogotá, Colombia",
         rol: "Development Full-Stack",

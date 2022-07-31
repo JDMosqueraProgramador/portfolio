@@ -12,7 +12,7 @@ const MainMode: React.FC<{}> = () => {
                         <input type="checkbox" name="mode" id="mode" onChange={toggleTheme} checked={(theme === Themes.dark)} />
                         <span className='slider'></span>
                         <p className='d-inline-block margin-left-16'>
-                            Cambiar modo
+                            Change mode
                         </p>
                     </label>
                 </div>

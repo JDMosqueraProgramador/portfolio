@@ -1,4 +1,5 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .container-project {
     padding: {
@@ -18,6 +19,15 @@
         margin: {
             left: $base * 0.5px;
             right: $base * 0.5px;
+        }
+    }
+
+    .buttons-projects {
+        @include m-xl {
+            flex-wrap: wrap;
+            .btn-primary {
+                margin: $base * 0.5px;
+            }
         }
     }
 }

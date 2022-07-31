@@ -5,10 +5,10 @@ import './card-area.scss';
 const CardArea: React.FC<IArea> = 
 ({ title, technologies, img }) => {
     return (
-        <div className='card-area'>
+        <div className='card-area' >
             <h3 className='size-bold-xl-three-md-two margin-bottom-16'>{title}</h3>
             <img src={img} alt="" />
-            <ul className='size-xl-three-md-two'>
+            <ul className='size-xl-three-md-two' translate='no'>
                 {technologies.map((tec, i) => (
                     <li key={i}>{tec}</li>
                 ))}

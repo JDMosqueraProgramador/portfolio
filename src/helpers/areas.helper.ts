@@ -16,7 +16,7 @@ export const tags: Array<{ title: string, content: Array<string> }> = [
     },
     {
         title: "Complementary",
-        content: ["Figma", "Git"]
+        content: ["Android", "Desktop", "Figma", "Git"]
     }  
 ]
 
@@ -39,7 +39,7 @@ const areas: Array<IArea> = [
     },
     {
         img: learnImg,
-        title: "I want to learn",
+        title: "I ant to learn",
         technologies: ["Data analysis", "Machine Learning", "Deep Learning", "Mobile Development"]
     }
 ];
