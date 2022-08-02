@@ -80,9 +80,21 @@
 
         img {
             width: 100%;
-            height: auto;            
+            height: auto;
         }
-        
+
+        @include m-xl {
+            padding: $base * 2px;
+            img {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
     }
 
     @include m-mobile {}
