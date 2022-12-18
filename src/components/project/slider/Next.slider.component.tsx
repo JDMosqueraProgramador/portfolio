@@ -1,6 +1,11 @@
 import React from 'react';
 
-const NextSlider: React.FC<{ img: string, select: Function }> = ( { img, select }) => {
+interface NextSliderProps {
+    img: string;
+    select: Function;
+}
+
+const NextSlider: React.FC<NextSliderProps> = ( { img, select }) => {
     return (
         <img src={img} className="slider-image-change" onClick={ () => select(img) } alt=''/>
     )

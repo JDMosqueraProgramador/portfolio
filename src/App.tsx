@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ThemeContext } from './context/themes.context';
-import { Themes } from './helpers/themes.enum';
+import { Themes } from './types/context/themes.enum';
 import { changeTheme, getTheme, saveTheme } from './helpers/save-theme.helper';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';

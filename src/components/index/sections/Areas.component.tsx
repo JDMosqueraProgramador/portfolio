@@ -9,13 +9,13 @@ const Areas: React.FC<{}> = () => {
 
         <ThemeContext.Consumer>
             {({theme}) => (
-                <section className='areas-technologies container-xl' id="areas">
+                <section className='areas-technologies container-xl xxl-screen' id="areas">
                     <h2 className='size-bold-xl-three-md-two text-center margin-bottom-16'>AREAS & TECHNOLOGIES</h2>
                     <p className='size-xl-three-md-two text-center'>They are the areas and technologies I know and work with these.</p>
                     <div className={"areas " + theme}>
                         {
                             areas.map((area, i) => (
-                                <CardArea key={i} img={area.img} technologies={area.technologies} title={area.title} />
+                                <CardArea key={i} {...area} />
                             ))
                         }
                     </div>

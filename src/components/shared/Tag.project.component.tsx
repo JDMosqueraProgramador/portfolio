@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
-import { ETag } from '../../interfaces/tag.enum';
+import { ETag } from '../../types/elements/tag.enum';
 
 
 
-const Tag: React.FC<{ content: string, type: ETag, setSelected?: Function }> = ({ content, type, setSelected }) => {
+interface TagProps {
+    content: string;
+    type: ETag;
+    setSelected?: Function;
+}
+
+const Tag: React.FC<TagProps> = ({ content, type, setSelected }) => {
 
     const [active, setActive] = useState<boolean>(false);
 

@@ -5,7 +5,11 @@ import MainMode from "../main/Mode.main.component";
 import decorationImg from "../../../images/decoration.svg";
 import "./main.scss";
 
-const Main: React.FC<{ setMain: any }> = ({ setMain }) => {
+interface MainProps {
+    setMain: Function
+}
+
+const Main: React.FC<MainProps> = ({ setMain }) => {
 
     const mainRef = useRef<HTMLElement>(null);
 
@@ -13,7 +17,6 @@ const Main: React.FC<{ setMain: any }> = ({ setMain }) => {
         const handleResize = () => {
             let height: number = mainRef.current!.clientHeight;
             setMain(((height - 1) > window.innerHeight));
-            console.log(height, window.innerHeight);
         };
 
         handleResize();
@@ -26,7 +29,7 @@ const Main: React.FC<{ setMain: any }> = ({ setMain }) => {
 
     return (
         <main ref={mainRef} className="container-fluid d-flex" id="about-me" >
-            <div className="row">
+            <div className="row xxl-screen">
                 <MainMode />
                 <MainImage />
                 <MainInfo />

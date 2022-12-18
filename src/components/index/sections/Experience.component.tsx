@@ -12,12 +12,12 @@ const Experience: React.FC<{}> = () => {
             {({ theme }) => (
                 <section className={'experience ' + theme} id="experience">
                     <h2 className='experience-title'>ACADEMIC AND WORK</h2>
-                    <p className='experience-description container-xxl'>Here you can know about my studies, recognitions and achievements.</p>
+                    <p className='experience-description container-xxl xxl-screen '>Here you can know about my studies, recognitions and achievements.</p>
 
-                    <div className="d-flex flex-wrap justify-content-center">
+                    <div className="d-flex flex-wrap justify-content-center xxl-screen">
                         {
                             experiences.map((experience, i) => (
-                                <CardExperience key={i} urls={experience.urls} title={experience.title} date={experience.date} description={experience.description} />
+                                <CardExperience key={i} {...experience} />
                             ))
                         }
                     </div>

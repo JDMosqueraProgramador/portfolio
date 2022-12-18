@@ -1,7 +1,11 @@
 import React from 'react';
 import tagImg from '../../../images/label.svg';
 
-const RolInfo: React.FC<{ content: string }> = ({ content }) => {
+interface RolInfoProps {
+    content: string;
+}
+
+const RolInfo: React.FC<RolInfoProps> = ({ content }) => {
     return (
         <div className='d-flex justify-content-center margin-top-16 margin-bottom-16'>
             <img src={tagImg} alt="" className='margin-right-8' />

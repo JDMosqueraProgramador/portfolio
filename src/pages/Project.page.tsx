@@ -19,7 +19,7 @@ const Project: React.FC<{}> = () => {
 
         <>
             <Menu alt={true} />
-            <div className='container-fluid container-project'>
+            <div className='container-fluid container-project xxl-screen'>
                 <h2 className='text-center size-bold-xl-three-md-two margin-bottom-24 margin-top-24'>{name.toUpperCase()}</h2>
 
                 <div className="row">

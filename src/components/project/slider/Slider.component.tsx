@@ -3,7 +3,11 @@ import NextSlider from './Next.slider.component';
 import PictureSlider from './Picture.slider.component';
 import './slider.scss';
 
-const Slider: React.FC<{ pictures: Array<string> }> = ({ pictures }) => {
+interface SliderProps {
+    pictures: Array<string>;
+}
+
+const Slider: React.FC<SliderProps> = ({ pictures }) => {
 
     const [imgSelected, setImgSelected] = useState<string>(pictures[0]);
 

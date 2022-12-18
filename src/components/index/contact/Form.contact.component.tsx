@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import TextField from './Text.field.component';
 import TextareaField from './Textarea.field.component';
 
-interface contact {
+interface IContact {
     name: string,
     email: string,
     message: string
@@ -12,7 +12,7 @@ interface contact {
 
 const FormContact: React.FC<{}> = () => {
 
-    const initialValues: contact = {
+    const initialValues: IContact = {
         name: '', email: '', message: ''
     }
 

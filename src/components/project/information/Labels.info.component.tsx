@@ -1,8 +1,14 @@
 import React from "react";
-import { ETag } from "../../../interfaces/tag.enum";
+import { ETag } from "../../../types/elements/tag.enum";
 import Tag from "../../shared/Tag.project.component";
 
-const LabelsInfo: React.FC<{ technologies: Array<string> }> = ({ technologies }) => {
+
+
+interface LabelsInfoProps {
+    technologies: Array<string>;
+}
+
+const LabelsInfo: React.FC<LabelsInfoProps> = ({ technologies }) => {
     return (
         <div>
             <h3 className="size-bold-xl-three-md-two margin-bottom-16 margin-top-16">Labels and technologies</h3>

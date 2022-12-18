@@ -12,6 +12,7 @@
         "@types/react": "^18.0.12",
         "@types/react-dom": "^18.0.5",
         "bootstrap": "^5.2.0-beta1",
+        "eslint-plugin-react-hooks": "^4.6.0",
         "formik": "^2.2.9",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { ThemeContext } from '../../../context/themes.context';
 import meImg from '../../../images/me.png';
 import meDarkImg from '../../../images/me-dark.png'
-import { Themes } from '../../../helpers/themes.enum';
+import { Themes } from '../../../types/context/themes.enum';
 
 const MainImage: React.FC<{}> = () => {
     return (

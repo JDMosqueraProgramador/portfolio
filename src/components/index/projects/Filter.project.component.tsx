@@ -2,7 +2,11 @@ import React from 'react'
 import { tags } from '../../../helpers/areas.helper';
 import AcordeonProject from './Acordeon.project.component';
 
-const FilterProjects: React.FC<{ setSelected: any }> = ({ setSelected }) => {
+interface FilterProjectsProps {
+    setSelected: Function
+}
+
+const FilterProjects: React.FC<FilterProjectsProps> = ({ setSelected }) => {
 
     return (
         <div className="col-xl-3">

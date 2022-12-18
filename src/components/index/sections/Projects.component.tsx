@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { arrayToLower } from '../../../helpers/arrays.helper';
-import { IProject } from '../../../interfaces/project.interface';
+import { arrayToLower } from '../../../pipes/arrays.pipes';
+import { IProject } from '../../../types/elements/project.interface';
 import CardProject from '../projects/Card.project.component';
 import FilterProjects from '../projects/Filter.project.component';
 import { projects } from '../../../helpers/projects.helper'; 
@@ -20,7 +20,7 @@ const Projects: React.FC<{}> = () => {
     }
 
     return (
-        <section className='container-fluid projects' id="projects">
+        <section className='container-fluid projects xxl-screen' id="projects">
             <h2 className='size-bold-xl-three-md-two text-center margin-bottom-16'>PROJECTS AND FILTER</h2>
             <p className='size-xl-three-md-two text-center margin-bottom-32 container-xl'>Hover on a project to see its technologies or click on a project to see more. Select some technologies in the filter or enter the name in the input.</p>
 

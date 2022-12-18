@@ -1,6 +1,11 @@
 import React from 'react'
 
-const ModalSlider: React.FC<{ url: string, close: any }> = ({ url, close }) => {
+interface ModalSliderProps {
+    url: string;
+    close: any;
+}
+
+const ModalSlider: React.FC<ModalSliderProps> = ({ url, close }) => {
     return (
         <div className='img-modal' onClick={() => close(false)}>
             <img src={url} alt="" />

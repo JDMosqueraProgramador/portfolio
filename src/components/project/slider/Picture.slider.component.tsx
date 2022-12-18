@@ -4,7 +4,12 @@ import arrowLeft from '../../../images/arrow-left-circle.svg';
 import ControlSlider from './Control.slider.component';
 import ModalSlider from './Modal.slider.component';
 
-const PictureSlider: React.FC<{ img: string, handleControls: Function }> = ({ img, handleControls }) => {
+interface PictureSliderProps {
+    img: string;
+    handleControls: Function;
+}
+
+const PictureSlider: React.FC<PictureSliderProps> = ({ img, handleControls }) => {
 
 
     const [modal, setModal] = useState<boolean>(false);

@@ -1,4 +1,4 @@
-import { Themes } from "./themes.enum";
+import { Themes } from "../types/context/themes.enum";
 
 const THEME_STORAGE: string = "THEME";
 

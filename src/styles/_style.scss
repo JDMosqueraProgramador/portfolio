@@ -31,7 +31,11 @@ body {
     }
 }
 
-
+.xxl-screen {
+    max-width: 2000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 
 .transition-1s {
     transition: 1s;

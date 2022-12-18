@@ -1,19 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { IArea } from '../../../interfaces/card-area.interface';
+import { IArea } from '../../../types/elements/cardArea.interface';
 import imgArrowDown from '../../../images/arrow-down.svg';
 import imgArrowDownWhite from '../../../images/arrow-down-white.svg';
 
 import './acordeon.scss';
 import Tag from '../../shared/Tag.project.component';
 import { ThemeContext } from '../../../context/themes.context';
-import { Themes } from '../../../helpers/themes.enum';
-import { ETag } from '../../../interfaces/tag.enum';
+import { Themes } from '../../../types/context/themes.enum';
+import { ETag } from '../../../types/elements/tag.enum';
 
-interface IAcordeon extends IArea {
+interface AcordeonProps extends IArea {
     setSelected: Function
 }
 
-const AcordeonProject: React.FC<IAcordeon> = ({ title, technologies, setSelected }) => {
+const AcordeonProject: React.FC<AcordeonProps> = ({ title, technologies, setSelected }) => {
 
     const [active, setActive] = useState<boolean>(true);
     const [height, setHeight] = useState<number>(0);

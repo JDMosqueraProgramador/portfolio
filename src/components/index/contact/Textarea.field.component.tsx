@@ -1,7 +1,8 @@
 import React from 'react';
 import { FieldHookConfig, useField } from 'formik';
+import { TextFieldProps } from './Text.field.component';
 
-const TextareaField: React.FC<{ label: string, required: boolean } & FieldHookConfig<string>> = ({ label, required, ...props }) => {
+const TextareaField: React.FC<TextFieldProps & FieldHookConfig<string>> = ({ label, required, ...props }) => {
 
     const [field, meta] = useField(props);
 

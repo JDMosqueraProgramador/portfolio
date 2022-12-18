@@ -1,11 +1,16 @@
 import React, { FC, useEffect, useState } from 'react';
 import './menu.scss';
 import myselfImg from '../../images/myself.jpeg';
-import { Themes } from '../../helpers/themes.enum';
+import { Themes } from '../../types/context/themes.enum';
 import { ThemeContext } from '../../context/themes.context';
 import { Link } from 'react-router-dom';
 
-const Menu: FC<{ main?: boolean, alt: boolean }> = ({ main, alt }) => {
+interface MenuProps {
+    main?: boolean,
+    alt: boolean
+}
+
+const Menu: FC<MenuProps> = ({ main, alt }) => {
 
     const [extra, setExtra] = useState<boolean>(false);
     const [style, setStyle] = useState<string>("");
@@ -34,7 +39,7 @@ const Menu: FC<{ main?: boolean, alt: boolean }> = ({ main, alt }) => {
         <ThemeContext.Consumer>
             {({ theme }) => (
                 <header className={'menu container-fluid ' + theme + ((extra && !main && !alt) ? " menu-attach" : "") + style}>
-                    <nav className='row align-items-center'>
+                    <nav className='row align-items-center xxl-screen'>
 
                         {
                             (alt) ?

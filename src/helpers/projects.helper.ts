@@ -1,4 +1,4 @@
-import { IProject } from "../interfaces/project.interface";
+import { IProject } from "../types/elements/project.interface";
 
 export const projects: Array<IProject> = [
     {

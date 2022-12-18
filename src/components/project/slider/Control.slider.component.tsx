@@ -1,6 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const ControlSlider: React.FC<{ img: string, change: Function, prev: boolean }> = ( { img, change, prev } ) => {
+interface ControlSliderProps {
+    img: string;
+    change: Function;
+    prev: boolean;
+}
+
+const ControlSlider: React.FC<ControlSliderProps> = ( { img, change, prev } ) => {
     return (
         <button className='slider-control' onClick={ () => change(prev) }><img src={img} alt="" /></button>
     )

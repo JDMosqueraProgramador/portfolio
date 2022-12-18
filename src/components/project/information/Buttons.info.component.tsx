@@ -1,6 +1,10 @@
 import React from 'react';
 
-const ButtonsInfo: React.FC<{ buttons: Array<{ name: string, url: string }> }> = ({ buttons }) => {
+interface ButtonsInfoProps {
+    buttons: Array<{ name: string, url: string }>
+}
+
+const ButtonsInfo: React.FC<ButtonsInfoProps> = ({ buttons }) => {
 
     return (
         <div className='w-100'>

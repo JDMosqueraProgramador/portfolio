@@ -1,4 +1,4 @@
-import { IArea } from "../interfaces/card-area.interface";
+import { IArea } from "../types/elements/cardArea.interface";
 import webImg from "../images/programming.svg";
 import databaseImg from "../images/database.svg";
 import designImg from "../images/design.svg";

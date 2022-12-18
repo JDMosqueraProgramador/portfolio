@@ -1,12 +1,18 @@
 import React from 'react';
-import { ETag } from '../../../interfaces/tag.enum';
+import { ETag } from '../../../types/elements/tag.enum';
 import './card.scss';
 import Tag from '../../shared/Tag.project.component';
 import { Link } from 'react-router-dom';
 
-const CardProject:
-    React.FC<{ id: number, img: string, name: string, description: string, technologies: Array<string> }>
-    = ({ id, img, name, description, technologies }) => {
+interface CardProjectProps {
+    id: number,
+    img: string,
+    name: string,
+    description: string,
+    technologies: Array<string>
+}
+
+const CardProject: React.FC<CardProjectProps> = ({ id, img, name, description, technologies }) => {
         return (
             <div className='card-project'>
                 <Link to={id.toString()}>
