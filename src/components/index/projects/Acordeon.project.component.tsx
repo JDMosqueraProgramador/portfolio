@@ -9,11 +9,11 @@ import { ThemeContext } from '../../../context/themes.context';
 import { Themes } from '../../../types/context/themes.enum';
 import { ETag } from '../../../types/elements/tag.enum';
 
-interface AcordeonProps extends IArea {
+interface AcordeonProps<T> extends IArea<T> {
     setSelected: Function
 }
 
-const AcordeonProject: React.FC<AcordeonProps> = ({ title, technologies, setSelected }) => {
+const AcordeonProject: React.FC<AcordeonProps<string>> = ({ title, technologies, setSelected }) => {
 
     const [active, setActive] = useState<boolean>(true);
     const [height, setHeight] = useState<number>(0);

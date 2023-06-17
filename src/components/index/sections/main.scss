@@ -6,6 +6,10 @@ main {
     min-height: 100vh;
     height: max-content;
     position: relative;
+    padding: {
+        left: 0 !important;
+        right: 0 !important;
+    }
 
     .image {
         display: flex;

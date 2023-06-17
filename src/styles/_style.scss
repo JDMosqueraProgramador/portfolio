@@ -25,6 +25,10 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1400px) and (min-width: 960px) {
     * {
         font-size: 14px;
@@ -39,4 +43,51 @@ body {
 
 .transition-1s {
     transition: 1s;
+}
+
+.tooltip {
+    position: relative;
+    width: 100%;
+
+    &:hover {
+        .tooltip-hidden {
+            display: block;
+        }
+    }
+
+    .tooltip-hidden {
+        display: none;
+        position: absolute;
+        bottom: calc(100% + ($base * 1.5px));
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-dark;
+        color: white !important;
+        padding: $base * 1px $base * 3px;
+        border-radius: $base * 2px;
+        width: max-content;
+        max-width: 100%;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: calc(100% - 4px);
+            width: $base * 1px;
+            height: $base * 1px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            background-color: $color-dark;
+        }
+    }
+
+    &.dark {
+        .tooltip-hidden {
+            background-color: white;
+            color: $color-dark !important;
+
+            &::after {
+                background-color: white;
+            }
+        }
+    }
 }
