@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/JDMosqueraProgramador/portfolio/compare/v1.0.0...v1.0.1) (2024-01-27)
+
+
+### Bug Fixes
+
+* **ci:** fix artifact steps ([998f5ee](https://github.com/JDMosqueraProgramador/portfolio/commit/998f5ee31488dbe2874aef672cd94840e29d31c2))
+
 ## 1.0.0 (2024-01-27)
 
 
