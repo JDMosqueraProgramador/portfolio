@@ -13,20 +13,20 @@ const Footer: React.FC<{}> = () => {
             <div className="social-media">
 
                 <a href="https://www.linkedin.com/in/juan-david-mosquera-mu%C3%B1oz-b853b9190/" target="_blank" rel="noreferrer">
-                    <img src={linkedinImg} alt="" />
+                    <img src={linkedinImg} alt="Linkedin" />
                 </a>
 
                 <a href="https://gitlab.com/JDMosquera" target="_blank" rel="noreferrer">
-                    <img src={gitlabImg} alt="" />
+                    <img src={gitlabImg} alt="GitLab" />
                 </a>
                 <a href="https://github.com/JDMosqueraProgramador" target="_blank" rel="noreferrer">
-                    <img src={githubImg} alt="" />
+                    <img src={githubImg} alt="GitHub" />
                 </a>
                 <a href="mailto:jdmm360@gmail.com" target="_blank" rel="noreferrer">
-                    <img src={emailImg} alt="" />
+                    <img src={emailImg} alt="Email" />
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=573103651617&text=Hi,%20I%20want%20to%20make%20a%20project%20with%20you." target="_blank" rel="noreferrer">
-                    <img src={whatsappImg} alt="" />
+                    <img src={whatsappImg} alt="WhatsApp" />
                 </a>
             </div>
 
